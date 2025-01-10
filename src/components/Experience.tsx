@@ -2,8 +2,8 @@ import React from "react";
 import { EXPERIENCES, APP_CONSTANTS } from "../constants";
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
-      <h1 className="my-20 text-center text-4xl">{APP_CONSTANTS.EXPERIENCE}</h1>
+    <div className="border-b border-neutral-800 pb-4">
+      <h1 className="my-16 text-center text-4xl">{APP_CONSTANTS.EXPERIENCE}</h1>
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
@@ -17,12 +17,14 @@ const Experience = () => {
                   {experience.company}
                 </span>
               </h6>
-              <p className="mb-4 text-neutral-400">{experience.description}</p>
+              <p className="mb-4 text-neutral-400 text-justify">
+                {experience.description}
+              </p>
               <div className="flex flex-wrap">
                 {experience.technologies.map((technology, index) => (
                   <span
                     key={index}
-                    className="mr-2 mt-4 rounded bg-slate-300 px-2 py-1 text-sm font-medium text-purple-800"
+                    className="mr-2 mt-2 rounded bg-slate-300 px-2 py-1 text-sm font-medium text-purple-900"
                   >
                     {technology}
                   </span>
