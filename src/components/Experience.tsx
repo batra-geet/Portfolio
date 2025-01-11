@@ -1,16 +1,35 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { EXPERIENCES, APP_CONSTANTS } from "../constants";
+
 const Experience = () => {
   return (
     <div className="border-b border-neutral-800 pb-4">
-      <h1 className="my-16 text-center text-4xl">{APP_CONSTANTS.EXPERIENCE}</h1>
+      <motion.h1
+        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: -50 }}
+        transition={{ duration: 1 }}
+        className="my-12 text-center text-4xl"
+      >
+        {APP_CONSTANTS.EXPERIENCE}
+      </motion.h1>
       <div>
         {EXPERIENCES.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
-            <div className="w-full lg:w-1/4">
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ x: -100, opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="w-full lg:w-1/4 p-2"
+            >
               <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
-            </div>
-            <div className="w-full max-w-xl lg:w-3/4">
+            </motion.div>
+            <motion.div
+              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ x: 100, opacity: 0 }}
+              transition={{ duration: 1 }}
+              className="w-full max-w-xl lg:w-3/4 hover:bg-neutral-950 hover:shadow-2xl rounded-lg p-2"
+            >
               <h6 className="mb-2 font-semibold">
                 {experience.role} @{" "}
                 <span className="text-sm text-purple-100">
@@ -30,7 +49,7 @@ const Experience = () => {
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
           </div>
         ))}
       </div>
