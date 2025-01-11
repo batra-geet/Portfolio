@@ -1,7 +1,9 @@
-import project1 from "../assets/projects/project-1.jpg";
-import project2 from "../assets/projects/project-2.jpg";
-import project3 from "../assets/projects/project-3.jpg";
-import project4 from "../assets/projects/project-4.jpg";
+import medical from "../assets/projects/medical.jpeg";
+import rctmod from "../assets/projects/rctmod.png";
+import react from "../assets/projects/react.png";
+import heroSecurity from "../assets/projects/heroSecurity.webp";
+import healthSdk from "../assets/projects/healthSdk.png";
+import amani from "../assets/projects/amani.jpeg";
 
 export const EXPERIENCES = [
   {
@@ -32,32 +34,55 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+    title: "Medical Legal & Telemedicine Solution",
+    image: medical,
+    description: `It consists of multiple react native applications that provides healthcare services directly from your phone & helps patients to connect to Medical Practitioner over a video call and get advice from them.`,
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Context",
+      "Redux",
+    ],
   },
   {
-    title: "Task Management App",
-    image: project2,
-    description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+    title: "React modules",
+    image: rctmod,
+    description: `It is basically a collection of multiple standalone libraries built for providing common api service, feature-flagging, navigation libraries and multiple flows used in the project.`,
+    technologies: [
+      "React Native",
+      "JavaScript",
+      "TypeScript",
+      "Context",
+      "Firebase",
+    ],
   },
   {
-    title: "Portfolio Website",
-    image: project3,
-    description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+    title: "Medical Profile & Payment Web module",
+    image: react,
+    description: `Medical Profile Web Application created in ReactJs that allows the user to fill in their medical history.
+
+    Payment module created in React JS for seamless payment gateway experience utilizing stripe as the payment library`,
+    technologies: ["HTML", "React.js", "Tailwind"],
   },
   {
-    title: "Blogging Platform",
-    image: project4,
-    description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
+    title: "Hero Security (Antivirus & Optimizer)",
+    image: heroSecurity,
+    description: `This is an Android application that allows users to scan their installed applications in device for viruses, connect to a VPN, use the QR scanner and many other features such as junk cleaner, battery optimiser, storage optimiser & App locker`,
+    technologies: ["Android", "Java", "Kotlin"],
+  },
+  {
+    title: "Device Health Sdk",
+    image: healthSdk,
+    description: `FS Security Device Health Check Library is an Android SDK which provides a mechanism to check a phone's hardware, sensors and components to make sure everything is working properly for the purpose of mobile device insurance`,
+    technologies: ["Android", "Java", "Kotlin"],
+  },
+  {
+    title: "Amani",
+    image: amani,
+    description: `It was an Android SDK built for the KYC process used in banks or in other identity verification. It had several steps like capturing and uploading documents(Passport, Driving license), selfie, Address proof or personal details for the verification of user.
+`,
+    technologies: ["Android", "Java"],
   },
 ];
 
@@ -65,7 +90,7 @@ export const MY_DETAILS = {
   NAME: "Geetanshu Batra",
   DOMAIN: "Mobile App & Web Developer",
   ADDRESS: "6/745 Brij Vihar, Saharanpur 247001, U.P.",
-  PHONE: "+91 7300 80 4841",
+  PHONE: "7300 80 4841",
   EMAIL: "batra.geet01@gmail.com",
   SUMMARY_CONTENT: `I am an experienced mobile app and web developer with over 4.5 years of expertise in creating innovative, high-quality applications. I am highly skilled in React Native, React.js, JavaScript, TypeScript, Redux, Core Java, and Kotlin. Throughout my career, I have successfully developed and delivered multiple mobile applications for a wide range of industries, from startups to large enterprises.
     
@@ -83,4 +108,18 @@ export const APP_CONSTANTS = {
   PROJECTS: " Projects ",
   GET_IN_TOUCH: " Get in Touch ",
   EDUCATION: " Education ",
+  CONTACT_ME: "Contact me",
+  GITHUB: "Github",
+  LINKEDIN: "LinkedIn",
+  DOWNLOAD_RESUME: "Download Resume",
+};
+
+export const SKILLS = {
+  REACT: "React",
+  ANDROID: "Android",
+  JAVASCRIPT: "JavaScript",
+  TYPESCRIPT: "TypeScript",
+  TAILWIND: "Tailwind",
+  HTML: "HTML",
+  CSS: "CSS",
 };
